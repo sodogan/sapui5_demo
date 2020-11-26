@@ -8,14 +8,6 @@ sap.ui.define([
 	return UIComponent.extend("dev.sodogan.Component", {
 
 		metadata : {
-   /*
-  			"rootView": {
-				"viewName": "dev.sodogan.view.App",
-				"type": "XML",
-				"async": true,
-				"id": "app"
-			}
-	*/  
      	  manifest:"json"
 		},
 
@@ -29,13 +21,9 @@ sap.ui.define([
 			};
 			let oModel = new JSONModel(oData);
 			this.setModel(oModel);
-       /* No need as manifest is specifying
-			// set i18n model
-			let i18nModel = new ResourceModel({
-				bundleName : "dev.sodogan.i18n.i18n"
-			});
-			this.setModel(i18nModel, "i18n");
-		*/	
+        // No need as manifest is specifying
+	    // No need to set i18n model
+
 		}
 	});
 
