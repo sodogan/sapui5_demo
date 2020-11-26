@@ -1,0 +1,30 @@
+<mvc:View
+controllerName= 'dev.sodogan.controller.App'
+id='app'
+xmlns ='sap.m'
+xmlns:mvc ='sap.ui.core.mvc'
+  displayBlock="true"
+>
+<Shell>
+<App backgroundColor='Green'>
+<pages>
+<Page title= 'page title'>
+<Panel headerText= '{i18n>panelTitle}'>
+<content>
+<Button
+		id= 'btn1'
+		text="{i18n>sayHello}"
+		press=".onShowHello(${/name/})"/>
+<Input
+		value="{/name/}"
+		description="Hello {/name/}"
+		valueLiveUpdate="true"
+		width="{/input/width/}"
+		/>
+ </content>
+ </Panel>
+ </Page>
+ </pages>   
+</App>
+</Shell>
+</mvc:View>
